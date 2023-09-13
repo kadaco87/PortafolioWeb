@@ -77,6 +77,19 @@ header ul li a:hover {
     padding: 8px;
 }
 
+.menu {
+    display: none;
+}
+
+.mobile-menu {
+    position: absolute;
+    top: 60px;
+    padding: 24px;
+    background-color: white;
+    left: 0;
+    width: 100%;
+}
+
 section {
     display: flex;
     height: 45rem;
@@ -324,7 +337,8 @@ a {
     border: none;
     border-bottom: 2px solid #3d155f;
     color: rgba(189, 188, 188, 0.795);
-
+    font-size: 15px;
+    color: black;
 }
 
 .input-1:focus,
@@ -332,6 +346,7 @@ a {
 .textarea:focus {
     outline: none;
 }
+
 
 #input1 {
     align-self: flex-start;
@@ -350,15 +365,18 @@ a {
     width: 600px;
     display: flex;
     flex-direction: column;
+    font-weight: bold;
     justify-content: center;
     align-content: center;
     color: #3d155f;
+
 }
 
 .textarea {
     justify-content: center;
     align-content: center;
-    border: 1px solid #3d155f;
+    border: 2px solid #3d155f;
+    border-radius: 15px;
 }
 
 .boton-formulario,
@@ -383,4 +401,42 @@ a {
 
 i {
     margin: auto 18px;
+}
+
+.alertas {
+    color: crimson;
+    font-size: 15px;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+}
+
+@media (max-width: 640px) {
+
+    header,
+    body {
+        width: 100%;
+    }
+
+    .menu {
+        display: block;
+        margin: auto;
+        padding: 10px;
+        justify-content: center;
+        align-content: center;
+    }
+
+
+
+    .container-nav {
+        display: none;
+    }
+
+
+}
+
+@media(max-width: 641px) {
+    .mobile-menu {
+        display: none;
+    }
 }

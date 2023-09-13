@@ -20,6 +20,8 @@
         <h1 class="title">PORTAFOLIO</h1>
 
         <nav>
+            <i class="fa-solid fa-bars menu"></i>
+
             <ul class="container-nav">
                 <li>
                     <a href="#">INICIO</a>
@@ -37,7 +39,21 @@
                     <a href="#">CONTACTO</a>
                 </li>
             </ul>
+
+
+            <!-- <div class="mobile-menu inactive">
+                <ul>
+                    <li><a href="/">INICIO</a></li>
+                    <li><a href="/">PROYECTOS</a></li>
+                    <li><a href="/">SERVICIOS</a></li>
+                    <li><a href="/">ACERCA DE MI</a></li>
+                    <li><a href="/">CONTACTO</a></li>
+
+                </ul>
+            </div> -->
         </nav>
+
+
 
     </header>
 
@@ -142,27 +158,30 @@
                 <p class="enunciado">Tienes alguna pregunta o propuesta, o simplemente me quieres saludar?. Adelante</p>
             </div>
             <!-- formulario -->
-            <form action="">
+            <form action="" method="post" id="form" class="formulario">
                 <div class="inputs">
                     <div class="inputs-container">
                         <div id="input1">
-                            <label for="" class="label-1">Nombre</label>
-                            <input class="input-1" type="text" placeholder="Introduce su nombre">
+                            <label for="nombre" class="label-1">Nombre</label>
+                            <input id="nombre" class="input-1" type="text" placeholder="Introduce tu nombre" required>
+
                         </div>
                         <div>
-                            <label for="" class="label-2">Direccion de correo electronico</label>
-                            <input class="input-2" type="email" placeholder="Introduce tu Email">
+                            <label for="email" class="label-2">Direccion de correo electronico</label>
+                            <input id="email" class="input-2" type="email" placeholder="Introduce tu Email" required>
                         </div>
                     </div>
                 </div>
                 <div class="mensaje">
-                    <label for="">Tu mensaje</label>
-                    <textarea class="textarea" name="" id="" cols="50" rows="10"></textarea>
+                    <label class="mensaje" for="mensaje">Tu mensaje</label>
+                    <textarea itemid="mensaje" class="textarea" name="textarea" id="textarea" cols="53"
+                        rows="10"></textarea>
                 </div>
                 <div class="btn">
-                    <button class="boton-formulario" type="submit">Enviar<i
+                    <button id="submit" class="boton-formulario" type="submit">Enviar<i
                             class="fa-solid fa-arrow-right-long"></i></button>
                 </div>
+                <p id="alertas" class="alertas"></p>
             </form>
         </section>
 
